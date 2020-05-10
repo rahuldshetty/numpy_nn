@@ -4,7 +4,7 @@ numpy_nn
 
 
 .. image:: https://img.shields.io/pypi/v/numpy_nn.svg
-        :target: https://pypi.python.org/pypi/numpy_nn
+        :target: https://pypi.org/project/numpy-nn/0.1.0/
 
 .. image:: https://img.shields.io/travis/rahuldshetty/numpy_nn.svg
         :target: https://travis-ci.com/rahuldshetty/numpy_nn
