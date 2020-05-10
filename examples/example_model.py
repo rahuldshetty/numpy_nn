@@ -5,7 +5,7 @@ from numpy_nn.models import Model
 
 import numpy as np
 
-# we will try to implment 2x - 1
+# we will try to implment 2x + 1
 elems = [x for x in range(0,100)]
 x = np.array(elems).reshape((-1,1))
 y = np.array([2*x + 1 for x in elems]).reshape((-1,1))
