@@ -29,8 +29,13 @@ Numpy NN is a Deep Neural Network Package which is built on base Numpy operation
 
 Features
 --------
+* Layers: (Neurons)
+* Losses: (Mean Absolute Error)
+* Optimizer: (Stochastic Gradient Descent)
 
-* TODO
+TODO
+--------
+* Implementation Losses like CrossEntropy, Mean Sqaured Error, 
 
 Credits
 -------
