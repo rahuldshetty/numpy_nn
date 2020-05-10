@@ -7,7 +7,7 @@ class MeanAbsoluteError():
         self.last_y = y
 
         assert y_pred.shape == y.shape
-        sums = np.sum(np.abs( y_pred - y ))
+        sums = np.sum(np.abs( y_pred - y ), axis=0)
         n = y.shape[0]
         
         self.last_loss = sums/n        
