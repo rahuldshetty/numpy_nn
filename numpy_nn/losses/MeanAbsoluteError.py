@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class MeanAbsoluteError():
 
     def __call__(self, y, y_pred):
