@@ -13,3 +13,9 @@ class Sigmoid():
     def backward(self, dL_dy):
         self.dy_dx = self.result * (1 - self.result)
         return self.dy_dx * dL_dy
+
+    def set_optimizer(self, optimizer):
+        pass
+
+    def optimize(self):
+        pass

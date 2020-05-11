@@ -1,3 +1,5 @@
 # MAE
-from .MeanAbsoluteError import MeanAbsoluteError
-from .MeanAbsoluteError import MAE
+from .MeanAbsoluteError import MeanAbsoluteError, MAE
+
+# MSE
+from .MeanSquaredError import MeanSquaredError, MSE
