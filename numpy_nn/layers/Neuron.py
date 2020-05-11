@@ -2,8 +2,9 @@
 This module defines a layer of fully connected Neurons.
 '''
 import numpy as np
+from .Layer import Layer
 
-class Neuron:
+class Neuron(Layer):
     '''
     A Basic layer of neurons which fully connects to the next layer.
     '''
@@ -33,9 +34,6 @@ class Neuron:
         self.dL_dx = np.dot(dL_dy, dy_dx)
 
         return self.dL_dx
-
-    def set_optimizer(self, optimizer):
-        self.optimizer = optimizer
 
     def optimize(self):
         self.weights = self.optimizer(self.weights, self.dL_dw)
