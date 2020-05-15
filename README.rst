@@ -32,7 +32,7 @@ Features
 * Layers: (Neurons)
 * Losses: (Mean Absolute Error, Mean Squared Error)
 * Optimizer: (Stochastic Gradient Descent)
-* Activation: (ReLU, TanH, Sigmoid)
+* Activation: (ReLU, TanH, Sigmoid, LeakyReLU. ELU)
 * Layer Abstraction to implement custom activations and layers
 
 TODO
