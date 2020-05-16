@@ -12,3 +12,6 @@ from .ELU import ELU, elu
 
 # LeakyReLU
 from .LeakyReLU import LeakyReLU, leakyrelu
+
+# Softmax
+from .Softmax import Softmax, softmax
