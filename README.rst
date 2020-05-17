@@ -31,7 +31,7 @@ Features
 --------
 * Layers: (Neurons)
 * Losses: (Mean Absolute Error, Mean Squared Error, Binary Cross Entropy, Cross Entropy)
-* Optimizer: (Stochastic Gradient Descent)
+* Optimizer: (Stochastic Gradient Descent, RMSProp, Adam, Momentum)
 * Activation: (ReLU, TanH, Sigmoid, LeakyReLU. ELU, Softmax)
 * Layer Abstraction to implement custom activations and layers
 
