@@ -7,3 +7,6 @@ class SGD():
 
     def __call__(self, param, dL):
         return param - self.lr * dL
+
+    def set_parameters(self, params, param_name=None):
+        self.parmeters = params

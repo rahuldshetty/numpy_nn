@@ -35,6 +35,16 @@ class Neuron(Layer):
 
         return self.dL_dx
 
+    def get_parameters(self):
+        return {
+            "weights": self.weights,
+            "biases": self.biases
+        }
+
+    def set_optimizer(self, optimizer):
+        optimizer.set_parameters(self.get_parameters())
+        self.optimizer = optimizer
+
     def optimize(self):
-        self.weights = self.optimizer(self.weights, self.dL_dw)
-        self.biases = self.optimizer(self.biases, self.dL_db)
+        self.weights = self.optimizer(self.weights, self.dL_dw, "weights")
+        self.biases = self.optimizer(self.biases, self.dL_db, "biases")
