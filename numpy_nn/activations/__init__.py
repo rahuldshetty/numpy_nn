@@ -15,3 +15,6 @@ from .LeakyReLU import LeakyReLU, leakyrelu
 
 # Softmax
 from .Softmax import Softmax, softmax
+
+# Swish
+from .Swish import Swish, swish

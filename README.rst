@@ -34,6 +34,7 @@ Features
 * Optimizer: (Stochastic Gradient Descent, RMSProp, Adam, Momentum)
 * Activation: (ReLU, TanH, Sigmoid, LeakyReLU. ELU, Softmax)
 * Layer Abstraction to implement custom activations and layers
+* Persist model for later reuse.
 
 TODO
 --------

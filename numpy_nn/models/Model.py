@@ -1,4 +1,5 @@
 import numpy as np
+import pickle
 
 class Model():
     
@@ -71,3 +72,18 @@ class Model():
             if self.predict(x_val) == y_val:
                 num_corrects += 1
         return num_corrects/x_val.shape[0]
+
+    def save(self, filename='model.pkl'):
+        '''
+        Packages and saves the model using the pickle package.
+        '''
+        file = open(filename, 'wb')
+        pickle.dump(self, file)
+        file.close()
+
+    @staticmethod
+    def load(filename):
+        file = open(filename, 'rb')
+        model = pickle.load(file)
+        file.close()
+        return model
