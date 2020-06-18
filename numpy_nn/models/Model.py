@@ -1,5 +1,6 @@
 import numpy as np
 import pickle
+from copy import copy
 
 class Model():
     
@@ -25,8 +26,9 @@ class Model():
             layer.optimize()
 
     def set_optimizer(self, optimizer):
-        for layer in self.layers:
-            layer.set_optimizer(optimizer)
+        for layer in reversed(self.layers):
+            opt = copy(optimizer)
+            layer.set_optimizer(opt)
 
     def set_loss(self, loss_fn):
         self.loss_fn = loss_fn
@@ -43,7 +45,7 @@ class Model():
             for i in range(0, x_train.shape[0], batch_size):
                 x, y = x_train[i:i+batch_size], y_train[i:i+batch_size]
                 y_pred = self.forward(x)
-
+                
                 epoch_loss += self.loss_fn(y, y_pred)
                 
                 dL_dy = self.loss_fn.gradient()

@@ -19,4 +19,5 @@ class RMSProp():
         beta = self.beta
         new_value = beta * value + (1-beta)*(dL**2)
         self.run_values[param_name] = new_value
-        return param - self.lr * dL/(np.sqrt(new_value) + self.epsilon)
+        result = param - self.lr * dL/(np.sqrt(new_value) + self.epsilon)
+        return result

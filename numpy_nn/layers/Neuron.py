@@ -8,9 +8,10 @@ class Neuron(Layer):
     '''
     A Basic layer of neurons which fully connects to the next layer.
     '''
-    def __init__(self, num_inputs, num_outputs):
+    def __init__(self, num_inputs, num_outputs, name='Neuron_Layer'):
         self.num_inputs = num_inputs
         self.num_outputs = num_outputs
+        self.name = name
 
         self.weights = np.random.standard_normal((num_inputs, num_outputs))
         self.biases = np.random.standard_normal(num_outputs)
@@ -48,3 +49,4 @@ class Neuron(Layer):
     def optimize(self):
         self.weights = self.optimizer(self.weights, self.dL_dw, "weights")
         self.biases = self.optimizer(self.biases, self.dL_db, "biases")
+        
