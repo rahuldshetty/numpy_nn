@@ -19,5 +19,8 @@ from .Softmax import Softmax, softmax
 # Swish
 from .Swish import Swish, swish
 
+# LiSHT
+from .LiSHT import LiSHT, lisht
+
 # Trignometry
 from .Trignometry import Sin, sin
